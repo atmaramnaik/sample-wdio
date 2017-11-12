@@ -58,7 +58,7 @@ exports.config = {
     sync: true,
     //
     // Level of logging verbosity: silent | verbose | command | data | result | error
-    logLevel: 'silent',
+    logLevel: 'verbose',
     //
     // Enables colors for log output.
     coloredLogs: true,
@@ -164,6 +164,7 @@ exports.config = {
      */
     before: function (capabilities, specs) {
         browser.timeouts('pageLoad', 40000);
+        browser.timeouts('implicit', 20000)
     },
     /**
      * Runs before a WebdriverIO command gets executed.
