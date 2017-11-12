@@ -1,0 +1,20 @@
+{
+  "name": "sample-wdio",
+  "version": "1.0.0",
+  "description": "Sample Test Automation using webdriverio",
+  "dependencies": {
+    "immutable": "^3.7.5",
+    "json-override": "0.2.0",
+    "ramda": "^0.21.0",
+    "webdriverio": "^4.9.6"
+  },
+  "devDependencies": {
+    "wdio-dot-reporter": "0.0.9",
+    "wdio-mocha-framework": "^0.5.11",
+    "wdio-selenium-standalone-service": "0.0.9"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/wdio wdio.conf.js"
+  },
+  "license": "UNLICENCED"
+}
